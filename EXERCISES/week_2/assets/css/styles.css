@@ -1,0 +1,92 @@
+@import url('../font/Montserrat/montserrat_font.css');
+@import url('../font/Unbounded/unbounded_font.css');
+
+
+/* Global */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-feature-settings: normal;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ED1C24;
+    border-radius: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    overflow: hidden auto;
+    padding: 0 0;
+    margin: 0 0;
+    vertical-align: baseline;
+    font-weight: 400;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    line-height: 24.8px;
+    color: #192B65;
+}
+
+header {
+    top: 0;
+    left: 0;
+    height: calc(10rem + 5rem);
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    position: fixed;
+    z-index: 50;
+}
+
+header a {
+    text-decoration: none;
+}
+
+main {
+    padding-top: 15rem;
+}
+
+ol,ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 0;
+
+    font-size: 1.6rem;
+}
+
+button {
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+row {
+    margin: calc(-1 * var(1.2rem));
+}
