@@ -1,6 +1,9 @@
 @import url('../font/Montserrat/montserrat_font.css');
 @import url('../font/Unbounded/unbounded_font.css');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+@import url('./styles_class.css');
 
 /* Global */
 * {
@@ -60,6 +63,11 @@ header a {
 
 main {
     padding-top: 15rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
 }
 
 ol,ul {
