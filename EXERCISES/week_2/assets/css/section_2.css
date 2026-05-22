@@ -1,6 +1,6 @@
 .section-2 {
     width: 100%;
-    padding: 80px 0;
+    padding: 12rem 0;
     background-color: #ffffff;
 }
 
@@ -49,10 +49,6 @@
         color: #ED1C24;
         letter-spacing: -0.28px;
     }
-
-    & .title:hover {
-        color: #ED1C24;
-    }
 }
 
 /* Bài viết lớn (Trái) */
@@ -85,15 +81,9 @@
         row-gap: .8rem;
     }
 
-    & .title {
-        color: #192B65;
-        text-decoration: none;
-        font-weight: 700;
+    & h3 {
         font-size: 2.2rem;
-        line-height: 130%;
-        transition: color 0.2s;
-        letter-spacing: -0.48px;
-        
+        margin: 0;
     }
 
     & .go-link {
@@ -167,18 +157,9 @@
         row-gap: .4rem;
     }
 
-    & .title {
-        color: #192B65;
-        text-decoration: none;
-        font-weight: 700;
+    & h3 {
         font-size: 1.6rem;
-        line-height: 130%;
-        transition: color 0.2s;
-        letter-spacing: -0.32px;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
+        margin: 0;
     }
 }
 
@@ -302,32 +283,4 @@
 .btn-more-container {
     text-align: center;
     margin-top: 5rem;
-}
-
-.btn-more {
-    background-color: #192B65;
-    color: #ffffff;
-    padding: 1.2rem 1.4rem;
-    border-radius: 0.8rem;
-    line-height: 160%;
-    letter-spacing: -.32px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    gap: .8rem;
-    display: flex;
-    transition: background-color 0.3s;
-    margin: 0 auto;
-    width: max-content;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-more:hover {
-    background-color: #ED1C24;
-}
-
-.btn-more .icon-arrow {
-    width: 1.2rem;
-    height: 1.2rem;
 }

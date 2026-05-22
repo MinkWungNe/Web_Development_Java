@@ -24,3 +24,125 @@
     margin: 0;
     padding: 0;
 }
+
+/*========= BUTTONS =========*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    color: #ffffff;
+    background-color: #192B65; /* Default: Blue */
+    border: 1px solid transparent;
+    cursor: pointer;
+    line-height: 160%;
+    letter-spacing: -0.32px;
+    width: max-content;
+}
+
+.btn img {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ED1C24; /* Default hover: Red */
+}
+
+.btn--red {
+    background-color: #ED1C24;
+}
+
+.btn--red:hover {
+    background-color: #ffffff;
+    color: #ED1C24;
+    border-color: #ED1C24;
+}
+
+.btn--red:hover img {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(89%) saturate(4513%) hue-rotate(346deg) brightness(96%) contrast(93%);
+}
+
+/*========= TYPOGRAPHY & COMPONENTS =========*/
+.news-title-link {
+    color: #192B65;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: color 0.2s;
+}
+
+.news-title-link:hover {
+    color: #ED1C24;
+}
+
+/*======== BAR FIXED =========*/
+.bar-fixed {
+    --size: 4.8rem;
+    position: fixed;
+    z-index: 10;
+    bottom: 13rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.5rem;
+
+    & .bar-top-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        row-gap: 1.2rem;
+    }
+
+    & .bar-to-top {
+        width: var(--size);
+        height: var(--size);
+        border-radius: 100rem;
+        background: rgba(25, 43, 101, 0.5);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.1rem solid #ffffff;
+        cursor: pointer;
+
+        & ::before{
+            content: "\f077";
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            font-family: "Font Awesome 6 Free";
+        }
+    }
+}
+
+/*======== CHATBOT =========*/
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s;
+    transform: scale(1);
+
+    & img {
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+}
