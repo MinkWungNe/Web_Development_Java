@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="calc.js"></script>
+        <title>Tính PT Bậc 2</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Tính phương trình bậc 2</h1>
+            <h2>ax<sup>2</sup> + bx + c = 0</h2>
+            <form>
+                <div class="input-item">
+                    <span>a:</span>
+                    <input type="number" id="a">
+                </div>
+                <div class="input-item">
+                    <span>b:</span>
+                    <input type="number" id="b">
+                </div>
+                <div class="input-item">
+                    <span>c:</span>
+                    <input type="number" id="c">
+                </div>
+
+                <button type="button" onclick="calc()">Tính</button>
+
+                <div class="result">
+                    <span>Kết quả:</span>
+                    <span id="result"></span>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
