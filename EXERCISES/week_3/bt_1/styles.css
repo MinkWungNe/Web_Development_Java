@@ -44,6 +44,7 @@ form {
     & input {
         border-radius: 0.5rem;
         height: 1.5rem;
+        padding: 0.2rem 0.5rem;
     }
 }
 

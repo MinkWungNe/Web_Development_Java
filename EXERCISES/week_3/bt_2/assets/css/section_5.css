@@ -1,0 +1,183 @@
+.section-5 {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+
+    & .bg-img{
+        position: fixed;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        object-position: bottom;
+        overflow: clip;
+    }
+}
+
+.section-5-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.section-5-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+
+    & img {
+        width: calc(4 / 12 * 100%);
+    }
+
+    & .sign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: "";
+            display: block; /* Đưa ::before vào luồng layout bình thường */
+            width: 1rem; /* Kích thước theo yêu cầu */
+            height: 10rem;
+            background-image: url(../image/main_5_linecir.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        &:last-child::before {
+            /* Áp dụng filter màu cho ::before của .sign thứ hai */
+            filter: brightness(0) saturate(100%) invert(20%) sepia(10%) saturate(4701%) hue-rotate(191deg) brightness(90%) contrast(102%);
+        }
+
+        &:first-child .sign-info{
+            background-color: #192B65;
+        }
+
+        &:last-child .sign-info{
+            background-color: #ED1C24;
+        }
+
+        & .sign-info {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            padding: 1.2rem 2rem;
+            border-radius: 0.8rem;
+
+            & img {
+                width: 3.2rem;
+                height: 3.2rem;
+                flex-shrink: 0;
+                display: flex;
+            }
+
+            & .content {
+                display: flex;
+                flex-direction: column;
+
+                & span {
+                    color: #ffffff;
+                    font-weight: 700;
+                }
+
+                & p {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.7);
+                    margin-block: 0;
+                }
+            }
+        }
+    }
+}
+
+.section-5-bottom {
+    margin-top: 6rem;
+
+    & .section-5-statistic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .statistic-item {
+
+            & .wrap {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 1.2rem;
+                row-gap: 1rem;
+                width: fit-content;
+                height: 100%;
+                padding: 1.2rem;
+            }
+            
+            & span {
+                font-size: 82.9585px;
+                font-weight: 700;
+                font-family: 'Unbounded';
+                margin: 0;
+                line-height: 100%;
+            }
+            
+            & p {
+                margin: 0;
+                line-height: 160%;
+                text-align: center;
+                text-wrap: balance;
+                font-weight: 600;
+                letter-spacing: -.32px;
+            }
+
+            & img {
+                height: 3.2rem;
+                width: 3.2rem;
+            }
+
+            &:nth-child(2) {
+                transform: translate(0, 20%);
+            }
+
+            &:nth-child(3) {
+                transform: translate(0, -10%);
+            }
+
+            &:nth-child(4) {
+                transform: translate(0, 30%);
+            }
+        }
+    }
+}
+
+.section-5-runway {
+    position: relative;
+    padding-top:  calc((100 / 1728) * 100%);
+    margin-top:30rem;
+    overflow: visible;
+
+    & .runway {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    & .mascot {
+        height: 294px;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        transition-delay: 0.6s;
+        transition: 2s ease;
+    }
+}

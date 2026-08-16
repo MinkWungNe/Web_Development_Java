@@ -1,0 +1,149 @@
+/* -------------------------------------------------------------------------- */
+/* Common initial hidden state for all scroll-revealed elements */
+/* -------------------------------------------------------------------------- */
+.scroll-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 2 - Top News Reveal Effects */
+/* -------------------------------------------------------------------------- */
+
+.news-top .wrap.scroll-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+}
+
+.news-top .wrap.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 2 - Bottom News Reveal Effects */
+/* -------------------------------------------------------------------------- */
+
+.news-bottom-item.scroll-hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    visibility: hidden;
+}
+
+.news-bottom-item.zoom-in {
+    animation: zoomIn 0.6s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 3 Reveal Effects */
+/* -------------------------------------------------------------------------- */
+.section-3__desc.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.section-3__desc.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.section-3__main-img.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.section-3__main-img.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.section-3 .bg-img.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.section-3 .bg-img.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 5 Reveal Effects */
+/* -------------------------------------------------------------------------- */
+
+.sign-info.scroll-hidden {
+    transform: perspective(1000px) rotateY(-90deg);
+}
+
+.sign-info.rotate-board-in {
+    animation: rotateBoardIn 1s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 6 Reveal Effects */
+/* -------------------------------------------------------------------------- */
+.section-6 .wrap .btn.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.section-6 .wrap .btn.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 7 Reveal Effects */
+/* -------------------------------------------------------------------------- */
+.section-7 .news-layout.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.section-7 .news-layout.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.news-slider-item.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.news-slider-item.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 9 Reveal Effects */
+/* -------------------------------------------------------------------------- */
+.partner .item.scroll-hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    visibility: hidden; /* Đảm bảo ẩn ban đầu */
+}
+
+.partner .item.zoom-in {
+    opacity: 1;
+    animation: zoomIn 0.6s ease-out forwards;
+    visibility: visible; /* Đảm bảo hiển thị khi animation chạy */
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 10 Reveal Effects */
+/* -------------------------------------------------------------------------- */
+.box.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.box.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.image-main.scroll-hidden {
+    transform: translateX(50px);
+}
+
+.image-main.fade-in-right {
+    animation: fadeRight 0.8s ease-out forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Global Section Title Reveal Effects */
+/* -------------------------------------------------------------------------- */
+.section-title.scroll-hidden {
+    transform: translateY(20px);
+}
+
+.section-title.fade-in-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}

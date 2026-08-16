@@ -1,0 +1,205 @@
+/*========= HEADER =========*/
+/* TOP HEADER */
+.top-header {
+    padding: 0 0rem;
+    background-color: rgb(255, 255, 255);
+    height: 10rem;
+    width: 100%;
+
+    & .top-header-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        gap: 1.6rem;
+    }
+
+    & .left-group {
+        display: flex;
+        align-items: center;
+
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    & .right-group {
+        gap: 3.2rem;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+    }
+}
+.top-menu {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    & .top-menu-link {
+        color: #192B65;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: -0.32px;
+        transition: color 0.2s;
+        
+        &:hover {
+            color: #ED1C24;
+        }
+    }
+}
+.search {
+    display: flex;
+    width: 271px;
+    height: 48px;
+    padding: 1.2rem 1.6rem; 
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 100rem;
+    vertical-align: baseline;
+
+    & input {
+        width: 213px;
+        height: 4.8rem;
+        align-self: center;
+        padding-right: 1rem;
+
+        &::placeholder {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #98A2B3;
+            letter-spacing: -0.28px;
+        }
+    }
+
+    &:hover {
+        border-color: #192B65;
+    }
+
+    .search-icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+.language {
+    display: flex;
+    align-items: center;
+
+    & .a {
+        color: red;
+        font-weight: 1000;
+        text-decoration: bold;
+        font-size: 16px;
+    }
+
+    & .a::after {
+        content: '';
+        display: inline-block;
+        width: 0.2rem;
+        height: 1.8rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0 0.45rem;
+        vertical-align: middle;
+    }
+    & .b {
+        font-weight: 500;
+        font-size: 16px;
+        color: #192B65;
+    }
+}
+
+.login {
+
+    & a {
+        text-decoration: none;
+        color: #192B65;
+        font-weight: 600;
+        text-decoration: bold;
+        font-size: 14px;
+        align-items: center;
+        display: flex;
+        gap: 0.8rem;
+        letter-spacing: -0.28px;
+
+        & img {
+            max-width: 20px;
+            height: 20px;
+        }
+
+        & :hover {text-decoration: underline;}
+    }
+}
+
+/* BOTTOM HEADER */
+.bottom-header {
+    background-color: #192B65;
+    height: 5rem;
+    width:100%;
+
+    & .bottom-header-wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 1.6rem;
+    }
+}
+
+.bottom-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.2rem;
+
+    & li {height: 100%;}
+    & :first-child  a {
+        color: #ED1C24;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 100px 100px 0 100px;
+            border-color: #ED1C24;
+            background-color: #ED1C24;
+            margin-right: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    & :not(:last-child):not(:first-child) a {
+        &::after {
+            content: '\f078'; /* Unicode cho biểu tượng chevron-down */
+            display: inline-block;
+            color: #ffffff;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 1.4rem; /* Kích thước biểu tượng */
+            margin-left: 0.5rem; /* Khoảng cách với chữ */
+        }
+    }
+
+    & .bottom-menu-link {
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+        height: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        text-wrap: nowrap;
+        letter-spacing: -0.32px;
+        padding: 0 1.6rem;
+
+        border-bottom: 0.2rem solid transparent;
+        transition: border-bottom 0.2s;
+
+        &:hover {
+            border-bottom: 0.2rem solid #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}

@@ -19,6 +19,6 @@ function calc() {
     }else{
         x1 = (-b + Math.sqrt(delta))/(2*a);
         x2 = (-b - Math.sqrt(delta))/(2*a);
-        document.getElementById('result').innerHTML = 'x1 = ' + x1 + '; x2 = ' + x2;
+        document.getElementById('result').innerHTML = 'x1 = ' + x1 + '<br/>' + 'x2 = ' + x2;
     }
 }

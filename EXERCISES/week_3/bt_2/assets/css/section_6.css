@@ -1,0 +1,9 @@
+.section-6 {
+    padding-bottom: 12rem;
+
+    & .wrap {
+        display: flex;
+        justify-content: center;
+        padding: 11rem 0 9rem;
+    }
+}

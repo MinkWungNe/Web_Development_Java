@@ -1,0 +1,195 @@
+@import url('./_header.css');
+@import url('./_footer.css');
+@import url('./_main.css');
+@import url(./_scroll_reveal_effects.css);
+@import url(./_keyframe.css); /* Import file keyframe để các animation được định nghĩa */
+
+/*========= BASE =========*/
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 124.6rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    gap: 3.7rem;
+}
+
+/*========= MAIN =========*/
+.section-title {
+    font-weight: 700;
+    font-size: 36.5054px;
+    color: #ED1C24;
+    text-align: center;
+    line-height: 56.5883px;
+    font-family: 'Unbounded';
+    margin: 0;
+    padding: 0;
+}
+
+/*========= BUTTONS =========*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    color: #ffffff;
+    background-color: #192B65;
+    border: 1px solid transparent;
+    cursor: pointer;
+    line-height: 160%;
+    letter-spacing: -0.32px;
+    width: max-content;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn > * {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.btn img {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* --- Hiệu ứng Hover cho nút mặc định (Xanh dương) --- */
+.btn:hover {
+    color: #192B65;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+}
+
+.btn:hover img {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(10%) saturate(4701%) hue-rotate(191deg) brightness(90%) contrast(102%);
+}
+
+/* --- Style riêng cho nút màu đỏ --- */
+.btn--red {
+    background-color: #ED1C24;
+}
+
+/* --- Hiệu ứng Hover cho nút màu đỏ --- */
+.btn--red:hover {
+    color: #ED1C24;
+    border-color: #ED1C24;
+}
+
+.btn--red:hover::before {
+    transform: scaleX(1);
+}
+
+.btn--red:hover img {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(89%) saturate(4513%) hue-rotate(346deg) brightness(96%) contrast(93%);
+}
+
+
+/*========= TYPOGRAPHY & COMPONENTS =========*/
+.news-title-link {
+    color: #192B65;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: color 0.2s;
+}
+
+.news-title-link:hover {
+    color: #ED1C24;
+}
+
+/*======== BAR FIXED =========*/
+.bar-fixed {
+    --size: 4.8rem;
+    position: fixed;
+    z-index: 10;
+    bottom: 13rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.5rem;
+
+    & .bar-top-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        row-gap: 1.2rem;
+
+        & img {
+            animation: ring-ring 1.4s linear infinite;
+        }
+    }
+
+    & .bar-to-top {
+        width: var(--size);
+        height: var(--size);
+        border-radius: 100rem;
+        background: rgba(25, 43, 101, 0.5);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.1rem solid #ffffff;
+        cursor: pointer;
+
+        & ::before{
+            content: "\f077";
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            font-family: "Font Awesome 6 Free";
+        }
+    }
+}
+
+/*======== CHATBOT =========*/
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s;
+    transform: scale(1);
+
+    & img {
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
